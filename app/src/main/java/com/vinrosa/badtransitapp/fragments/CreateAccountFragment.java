@@ -72,9 +72,6 @@ public class CreateAccountFragment extends Fragment implements View.OnClickListe
         createAccountButton = (Button) view.findViewById(R.id.create_account_button);
         createAccountButton.setOnClickListener(this);
 
-        usernameEditText.setText("vinliangx@gmail.com");
-        passwordEditText.setText("test1234");
-        passwordConfirmEditText.setText("test1234");
         return view;
     }
 

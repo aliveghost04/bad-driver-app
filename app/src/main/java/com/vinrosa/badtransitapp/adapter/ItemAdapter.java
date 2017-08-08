@@ -43,6 +43,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         holder.mDescTextView.setText(item.description);
         holder.mRatingTextView.setText(item.rating != null ? item.rating.toString() : "N/A");
         holder.mEmailTextView.setText(item.email);
+        holder.mImageView.setImageBitmap(null);
         FirebaseStorage storage = FirebaseStorage.getInstance();
         storage.getReference("Images").child(item.image).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override

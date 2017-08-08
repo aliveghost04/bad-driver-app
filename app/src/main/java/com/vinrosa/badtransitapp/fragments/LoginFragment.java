@@ -71,8 +71,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         signInButton.setOnClickListener(this);
         view.findViewById(R.id.create_account_button).setOnClickListener(this);
 
-        usernameEditText.setText("vinliangx@gmail.com");
-        passwordEditText.setText("test1234");
         return view;
     }
 
